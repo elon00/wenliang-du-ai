@@ -1,0 +1,51 @@
+{
+  "name": "wenliang-du-ai-mcp",
+  "version": "1.0.0",
+  "description": "Wenliang Du AI Model Context Protocol Server for Autonomous Hands-On Cybersecurity Education, SEED Labs Emulation, Operating System Defense & Applied Software Security Protocol",
+  "tools": [
+    {
+      "name": "audit_system_vulnerability_reproduction",
+      "description": "Evaluate reproduceability of buffer overflows, return-to-libc attacks, and dirty COW privilege escalations inside sandboxed lab environments",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cve_identifier": {
+            "type": "string"
+          },
+          "lab_environment": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cve_identifier"
+        ]
+      }
+    },
+    {
+      "name": "disburse_seed_educational_grant",
+      "description": "Trigger automated micro-escrow releases for open educational courseware, SEED labs container upgrades, and university cybersecurity instructors",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
